@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Fashion Store</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="preload" href="">
+<link rel="stylesheet" href="/css/Style.css">
+</head>
+<body>
+     <!-- SECCION INICIO-->
+     <section id="inicio">
+        <!--ENCABEZADO-->
+        <header>
+<div class="contenido-header">
+    <div class="logo">
+        <h1>Fashion Store</h1>
+</div>
+<nav id="nav">
+    <ul>
+        <li>
+            <a href="/screens/inicio.html" onclick="seleccionar()">
+                <i class="fa-solid fa-house"></i>
+                <span>Inicio</span>
+            </a>
+        </li>
+        <li>
+            <a href="/screens/Buscar.html" onclick="seleccionar()">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <span>Buscar</span>
+            </a>
+        </li>
+        <li>
+            <a href="/screens/Usuario.html" onclick="seleccionar()">
+                <i class="fa-solid fa-user"></i>
+                <span>Usuario</span>
+            </a>
+        </li>
+        <li>
+            <a href="/screens/Carrito de compra.html" onclick="seleccionar()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Carrito de compra</span>
+            </a>
+        </li>
+        <li>
+            <a href="/screens/menu.html" onclick="seleccionar()">
+                <i class="fa-solid fa-bars"></i>
+                <span>Menu</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div class="social">
+    
+<a href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a href="#">
+    <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a href="#">
+         <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+    </a>
+</div>
+<div class="nav-responsive" id="bar" onclick="seleccionar(mostarOcultar)">
+    <i class="fa-solid fa-bars"></i>
+<i class="fa-solid fa-brands"></i>
+</div>
+</header>
+<!--CARRUSEL-->
+<div class="carrusel">
+<div class="gallery js-flickity" data-flickity-options='{"wrapAround":true, "pageDots":false, "autoPlay":true}'>
+
+    <div class="gallery-cell">
+        <img src="/img/dia.avif" alt="" width="500px" height="400px">
+    </div>
+    <div class="gallery-cell">
+        <img src="/img/mujer-compras-.jpg" alt="" width="500px" height="400px">
+    </div>
+    <div class="gallery-cell">
+        <img src="/img/set.avif" alt="" width="500px" height="400px">
+    </div>
+    <div class="gallery-cell">
+        <img src="/img/imagen.jpg" alt="" width="500px" height="400px">
+    </div>
+
+</div>
+
+     </section>
+       <!-- SECCION Productos -->
+    <section id="Productos">
+        <h2>Productos</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="/img/short.jpg" alt=""  width="200px" height="100px">
+                </div>
+                <div class="info">
+                    <h3>Shorts Para Dama Estilo Playero</h3>
+                    <p>200 Lps</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="/img/pantalones.jpeg" alt=""  width="200px" height="100px">
+                </div>
+                <div class="info">
+                    <h3>Pantalón Jeans Estilo Vaquero</h3>
+                    <p>500 Lps</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="/img/Vestido de niña.jpg" alt=""  width="200px" height="100px">
+                </div>
+                <div class="info">
+                    <h3>Vestido para niña</h3>
+                    <P>300 Lps</P>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="/img/Zapatos de mujer.jpg" alt=""  width="200px" height="100px">
+                </div>
+                <div class="info">
+                    <h3>Sandalias para dama</h3>
+                    <p>1,500Lps</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="/img/Reloj de caballero.jpg" alt=""  width="200px" height="100px">
+                </div>
+                <div class="info">
+                    <h3>Reloj De Oro BR 05 Green Gold</h3>
+                    <p>2,000 Lps</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="/img/Maqullaje.jpg" alt=""  width="200px" height="100px">
+                </div>
+                <div class="info">
+                    <h3>Sombras Brillantes de Colore Naturales</h3>
+                    <p> 400 Lps </p>
+                </div>
+                </div>
+                <div class="item">
+                    <div class="icono">
+                        <img src="/img/Tenis deportivos.jpg" alt=""  width="200px" height="100px">
+                    </div>
+                    <div class="info">
+                        <h3>Zapatillas Deportivos</h3>
+                        <p>1500 Lps</p>
+                    </div>
+                    </div>
+                    <div class="item">
+                        <div class="icono">
+                            <img src="/img/Perfumes de mujer.jpg" alt="" width="200px" height="100px">
+                        </div>
+                        <div class="info">
+                            <h3>Perfumen de marca D G</h3>
+                            <p>1,200 Lps</p>
+                        </div>
+                        </div>
+                    
+
+            </div>
+        </div>
+
+        <button>Ver Más</button>
+</section>
+
+
+<!-- SECCION CONTACTO Y PIE DE PAGINA -->
+<section id="contacto">
+    <div class="fila">
+        <div class="col">
+            <h1>Fashion Store</h1>
+            <p>Derechos Reservados 2024/Yexy Lopez</p>
+        </div>
+        <div class="col">
+            <h3>Menú</h3>
+            <a href="/screens/inicio.html">Inicio</a>
+            <a href="/screens/Buscar.html">Buscar</a>
+            <a href="/screens/Usuario.html">usuario</a>
+            <a href="/screens/Carrito de compra.html">carrito de compra</a>
+            <a href="/screens/menu.html">Menu</a>
+        </div>
+        <div class="col">
+            <h3>Social Media</h3>
+            <div class="media">
+                <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
+            </div>
+            <div class="media">
+                <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+            </div>
+            <div class="media">
+                <i class="fa-brands fa-facebook"></i> <a href="#"> Facebook</a>
+            </div>
+            <div>
+                <div class="media">
+                    <i class="fa-brands fa-tiktok"></i> <a href="#">Tik Tok</a>
+                </div>
+                <div>
+                    <div class="media">
+                        <i class="fa-brands fa-whatsapp"></i> <a href="#">Whatsapp</a>
+                    </div>
+                </div>
+            </div>
+               
+        </div>
+        <div class="col">
+            <h3>Contacto</h3>
+            <input type="text" placeholder="Tu correo">
+            <input type="submit" class="enviar">
+        </div>
+    </div>
+
+</section>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</section>
+
+</body>
+</html>
